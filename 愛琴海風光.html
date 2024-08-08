@@ -31,15 +31,20 @@
       .text-right a {
         text-decoration: none;
       }
-      ul, li {
-  list-style-type: none;
-}
-/* img{
-  width: 100%;
-} */
-footer img {
-     width: 50%;
-  }
+      ul,
+      li {
+        list-style-type: none;
+      }
+      .list img {
+        width: 100%;
+        border-radius: 45px;
+      }
+      iframe {
+        border-radius: 45px;
+      }
+      footer img {
+        width: 50%;
+      }
     </style>
   </head>
   <body>
@@ -82,177 +87,298 @@ footer img {
         </div>
       </div>
     </header>
-    <div class="container">
+    <h1 class="text-center p-3">愛琴海風光</h1>
+
+    <div class="container list">
       <div class="row">
         <div class="col-4 img-fulid">
-          <div class="p-5">
+          <div class="p-4">
             <img
               src="img/希臘聖托里尼島  .jpg"
               alt=""
               class="w-100 img-rounded"
             />
-           <button>選擇</button>
           </div>
         </div>
         <div class="col-8">
-          <div class="p-5">
-            <h1>愛琴海風光</h1>
+          <div class="p-4">
+            <!-- <h1>愛琴海風光</h1> -->
 
-            <p>希臘，這個名字總讓人聯想到湛藍的愛琴海、純白的建築、悠閒的生活步調，以及深厚的歷史文化。身為西方文明的搖籃，希臘不僅擁有令人嘆為觀止的古蹟，更孕育了豐富的神話故事，吸引無數遊客前往探索。</p>
-                 
-                   
-          </body>
+            <p>
+              希臘，這個名字總讓人聯想到湛藍的愛琴海、純白的建築、悠閒的生活步調，以及深厚的歷史文化。
+            </p>
+            <p>
+              湛藍的愛琴海、璀璨的陽光、純白的沙灘，交織成一幅浪漫的海島畫卷。
+            </p>
+            <p>
+              古老的衛城、神廟、劇場，訴說著神話傳說與歷史故事，彷彿時光在此凝結。
+            </p>
+            <p>
+              無論你是熱愛歷史文化的探險家，還是嚮往悠閒海島生活的旅人，抑或是想體驗異國風情的美食家，希臘都能滿足你對旅行的所有憧憬。
+            </p>
+
+            <button type="button" class="btn btn-primary btn-lg">
+              Large button
+            </button>
           </div>
         </div>
       </div>
-      <hr class="border border-5">
-      <div class="container">
+      <hr class="border border-5" />
+
+      <div class="container mt-5">
+        <h1 class="text-center p-3">希臘旅遊地圖</h1>
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="100%"
+              height="300"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Greece&t=&z=6&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border border-5" />
+      <h1 class="text-center p-3">熱門景點介紹</h1>
+
+      <div class="container list">
         <div class="row">
-            <div class="col-4 ">
-              <div class="p-3">
-              <img src="img/聖托里尼島1.jpg  "alt="" class="img-fluid w-100">
+          <div class="col-4">
+            <div class="p-3">
+              <img src="img/聖托里尼島1.jpg  " alt="" class="img-fluid w-100" />
             </div>
+          </div>
+          <div class="col-8">
+            <div class="p-3">
+              <h2>藍頂建築</h2>
+              <p>
+                希臘的藍白建築，是地中海風情的經典代表。純白的房屋在湛藍的天空下熠熠生輝，彷彿童話故事中的城堡。
+              </p>
+              <p>
+                深邃的愛琴海與之相映成趣，海浪輕吻著岸邊的鵝卵石，奏出一曲浪漫的交響曲。
+              </p>
+              <p>
+                這獨特的建築風格，不僅是希臘悠久歷史和文化的縮影，更是希臘人對生活的美好嚮往的具體表現。
+              </p>
+              <p>
+                漫步在這樣的環境中，身心都得到了極大的放鬆，彷彿置身於一幅流動的油畫之中。
+              </p>
             </div>
-            <div class="col-8">
-              <div class="p-3">
-                <h2>藍頂建築</h2>
-                <p> 希臘的藍白建築，是地中海風情的經典代表。純白的房屋在湛藍的天空下熠熠生輝，彷彿童話故事中的城堡。</p>
-                <p>深邃的愛琴海與之相映成趣，海浪輕吻著岸邊的鵝卵石，奏出一曲浪漫的交響曲。</P> 
-                <p>這獨特的建築風格，不僅是希臘悠久歷史和文化的縮影，更是希臘人對生活的美好嚮往的具體表現。</p>
-                <p>漫步在這樣的環境中，身心都得到了極大的放鬆，彷彿置身於一幅流動的油畫之中。</p> 
-               </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-4 ">
+          <div class="col-4">
             <div class="p-3">
-            <img src="img/聖托里尼島2.jpg "alt="" class="img-fluid w-100">
-          </div>
+              <img src="img/聖托里尼島2.jpg " alt="" class="img-fluid w-100" />
+            </div>
           </div>
           <div class="col-8">
             <div class="p-3">
               <h2>阿莫迪灣</h2>
-              <p>阿莫迪灣，這顆鑲嵌在聖托里尼島上的藍寶石，以其獨特的地理位置、清澈的海水和色彩繽紛的建築而聞名。</p>
-              <p>懸崖峭壁下，湛藍的海水與紅頂白牆的房屋交相輝映，構成了一幅如夢似幻的畫面。</p>
-              <p>每當夕陽西下，金色的陽光灑在海面上，將整個灣區染上一層浪漫的色彩，令人心醉神迷。</p>
-              </div>
+              <p>
+                阿莫迪灣，這顆鑲嵌在聖托里尼島上的藍寶石，以其獨特的地理位置、清澈的海水和色彩繽紛的建築而聞名。
+              </p>
+              <p>
+                懸崖峭壁下，湛藍的海水與紅頂白牆的房屋交相輝映，構成了一幅如夢似幻的畫面。
+              </p>
+              <p>
+                每當夕陽西下，金色的陽光灑在海面上，將整個灣區染上一層浪漫的色彩，令人心醉神迷。
+              </p>
+            </div>
           </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="p-3">
+              <img src="img/聖托里尼島3.jpg " alt="" class="img-fluid w-100" />
+            </div>
           </div>
+          <div class="col-8">
+            <div class="p-3">
+              <h2>聖托里尼島的燈塔</h2>
+              <p>
+                聖托里尼島的燈塔大多建於19世紀末至20世紀初，當時海上交通繁忙，燈塔扮演著至關重要的角色。
+              </p>
+              <p>它們為過往的船隻提供導航，確保航行的安全。</p>
+              <p>
+                隨著科技的進步，燈塔的功能逐漸被現代化的導航系統取代，但這些古老的建築依然屹立在島上，成為歷史的見證。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="p-3">
+              <img src="img/雅典1.jpg " alt="" class="img-fluid w-100" />
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="p-3">
+              <h2>帕德嫩神殿</h2>
+              <p>
+                帕德嫩神殿建於公元前5世紀，是雅典城邦在伯利克利時代的輝煌成就之一。
+              </p>
+              <p>這座神殿不僅是宗教中心，更是雅典民主的象徵。</p>
+              <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
+              <p>
+                從羅馬帝國的統治，到拜占庭帝國的改建，再到鄂圖曼土耳其帝國的佔領，帕德嫩神殿曾多次被改建、被破壞。
+              </p>
+              <p>即便如此，它依然屹立不倒，見證了雅典城的興衰。</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="p-3">
+              <img src="img/克里特島1.jpg" alt="" class="img-fluid w-100" />
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="p-3">
+              <h2>克諾索斯宮</h2>
+              <p>
+                克諾索斯宮，這座隱藏在歷史迷霧中的龐大宮殿，是米諾斯文明最璀璨的明珠。
+              </p>
+              <p>
+                它不僅是歐洲最古老的宮殿之一，更是傳說中迷宮的原型，與希臘神話中的牛頭人米諾陶洛斯有著千絲萬縷的聯繫。
+              </p>
+              <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
+              <p>
+                宮殿內部錯綜複雜的通道和房間，似乎隱藏著無數不為人知的秘密，吸引著無數探險家和考古學家前來探索。
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+      <hr class="border border-5" />
+
+      <h1 class="text-center p-3">客戶評價</h1>
       <div class="row">
-        <div class="col-4 ">
-          <div class="p-3">
-          <img src="img/聖托里尼島3.jpg "alt="" class="img-fluid w-100">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Alice W.</h5>
+              <p class="card-text">
+                希臘之行真的太棒了！導遊很專業，景點安排得也很合理。
+              </p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bob K.</h5>
+              <p class="card-text">
+                非常棒的旅遊體驗，酒店和餐飲安排都非常到位。
+              </p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-8">
-          <div class="p-3">
-            <h2>聖托里尼島的燈塔</h2>
-            <p>聖托里尼島的燈塔大多建於19世紀末至20世紀初，當時海上交通繁忙，燈塔扮演著至關重要的角色。</p>
-            <p>它們為過往的船隻提供導航，確保航行的安全。</p>
-              <p>隨著科技的進步，燈塔的功能逐漸被現代化的導航系統取代，但這些古老的建築依然屹立在島上，成為歷史的見證。</p>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bob K.</h5>
+              <p class="card-text">
+                非常棒的旅遊體驗，酒店和餐飲安排都非常到位。
+              </p>
+              <div class="text-warning">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- 添加更多評價卡片 -->
       </div>
     </div>
-    <div class="row">
-      <div class="col-4 ">
-        <div class="p-3">
-        <img src="img/雅典1.jpg "alt="" class="img-fluid w-100">
-      </div>
-      </div>
-      <div class="col-8">
-        <div class="p-3">
-          <h2>帕德嫩神殿</h2>
-          <p>帕德嫩神殿建於公元前5世紀，是雅典城邦在伯利克利時代的輝煌成就之一。</p>
-          <p>這座神殿不僅是宗教中心，更是雅典民主的象徵。</p>
-          <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
-          <p>從羅馬帝國的統治，到拜占庭帝國的改建，再到鄂圖曼土耳其帝國的佔領，帕德嫩神殿曾多次被改建、被破壞。</p>
-          <p>即便如此，它依然屹立不倒，見證了雅典城的興衰。</p>
-      </div>
-    </div>
-  </div>
-   <div class="row">
-    <div class="col-4 ">
-      <div class="p-3">
-      <img src="img/克里特島1.jpg"alt="" class="img-fluid w-100">
-    </div>
-    </div>
-    <div class="col-8">
-      <div class="p-3">
-        <h2>克諾索斯宮</h2>
-        <p>克諾索斯宮，這座隱藏在歷史迷霧中的龐大宮殿，是米諾斯文明最璀璨的明珠。</p>
-        <p>它不僅是歐洲最古老的宮殿之一，更是傳說中迷宮的原型，與希臘神話中的牛頭人米諾陶洛斯有著千絲萬縷的聯繫。</p>
-        <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
-        <p>宮殿內部錯綜複雜的通道和房間，似乎隱藏著無數不為人知的秘密，吸引著無數探險家和考古學家前來探索。</p>
-  
-    </div>
-  </div>
-</div>
-    </div>
-    
-      </div>
-    </div>
+
     <footer class="bg-warning py-4 text-dark">
-        <div class="container">
-          <div class="row align-items-start">
-            <div class="col-3 text-left">
-              <img src="img/travel.png" alt="">
-              <h10>Travel Walker</h10>
-  
-            </div>
-            <div class="col-3  text-right">
-              <p class="text-start">
-                <b>聯絡方式</b><br/> 
-                xxxx股份有限公司<br/>
-                代表人:xxx<br/>
-                123@gmail.com<br />
-                1234-5678<br/>
-                地址:xxx市xxx里xxxx路x段xxx巷x號x樓<br>
-                統一編號：04655091
-              </p>
-            </div>
-            <div class="col-2">
-              <p class="text-start ">
-                <b>相關企業</b><br/>
-                xxxxxxxx<br/>
-                xxxxxxxx<br/>
-                xxxxxxxx<br/>
-                xxxxxxxx<br/>
-                xxxxxxxx<br/>
-                xxxxxxxx
-              </p>
-            </div>
-            <div class="col-3">
-              <div class="row">
-                <div class="col-md-6">
-                  <p class="text-start ">
-                    <b>APP下載</b><br/>
-                    <img src="img/QR_CODE.png" alt="">
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <p class="text-start ">
-                    <b>關注我們</b>
-                  </p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <img src="img/instagram (1).png" alt="">
-                    </div>
-                    <div class="col-md-6">
-                      <img src="img/facebook.png" alt="">
-                    </div>
-                    <div class="col-md-6">
-                      <img src="img/line.png" alt="">
-                    </div>
-                    <div class="col-md-6">
-                      <img src="img/twitter.png" alt="">
-                    </div>
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col-3 text-left">
+            <img src="img/travel.png" alt="" />
+            <h10>Travel Walker</h10>
+          </div>
+          <div class="col-3 text-right">
+            <p class="text-start">
+              <b>聯絡方式</b><br />
+              xxxx股份有限公司<br />
+              代表人:xxx<br />
+              123@gmail.com<br />
+              1234-5678<br />
+              地址:xxx市xxx里xxxx路x段xxx巷x號x樓<br />
+              統一編號：04655091
+            </p>
+          </div>
+          <div class="col-2">
+            <p class="text-start">
+              <b>相關企業</b><br />
+              xxxxxxxx<br />
+              xxxxxxxx<br />
+              xxxxxxxx<br />
+              xxxxxxxx<br />
+              xxxxxxxx<br />
+              xxxxxxxx
+            </p>
+          </div>
+          <div class="col-3">
+            <div class="row">
+              <div class="col-md-6">
+                <p class="text-start">
+                  <b>APP下載</b><br />
+                  <img src="img/QR_CODE.png" alt="" />
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p class="text-start">
+                  <b>關注我們</b>
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/instagram (1).png" alt="" />
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/facebook.png" alt="" />
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/line.png" alt="" />
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/twitter.png" alt="" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>
