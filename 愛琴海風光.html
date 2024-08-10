@@ -45,6 +45,16 @@
       footer img {
         width: 50%;
       }
+      /* 興及評分 */
+      .star-rating i {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .star-rating i.selected {
+    color: #ffca28;
+  }
     </style>
   </head>
   <body>
@@ -141,6 +151,9 @@
             ></iframe>
           </div>
         </div>
+      </div>
+
+        <div id="itinerary-result" class="mt-4"></div>
       </div>
 
       <hr class="border border-5" />
@@ -318,7 +331,31 @@
         <!-- 添加更多評價卡片 -->
       </div>
     </div>
-
+    <div class="container mt-5 mb-5">
+      <h3>分享您的評價</h3>
+      <form id="review-form">
+        <div class="form-group">
+          <label for="name">您的名字:</label>
+          <input type="text" class="form-control" id="name" placeholder="輸入名字">
+        </div>
+        <div class="form-group mt-3">
+          <label for="review">您的評價:</label>
+          <textarea class="form-control" id="review" rows="3" placeholder="寫下您的評價"></textarea>
+        </div>
+        <div class="form-group mt-3">
+          <label for="rating">星級評分:</label>
+          <div class="star-rating">
+            <i class="fas fa-star" data-value="1"></i>
+            <i class="fas fa-star" data-value="2"></i>
+            <i class="fas fa-star" data-value="3"></i>
+            <i class="fas fa-star" data-value="4"></i>
+            <i class="fas fa-star" data-value="5"></i>
+          </div>
+          <input type="hidden" id="rating" name="rating">
+        </div>
+        <button type="submit" class="btn btn-success mt-3">提交評價</button>
+      </form>
+    </div>
     <footer class="bg-warning py-4 text-dark">
       <div class="container">
         <div class="row align-items-start">
@@ -380,5 +417,25 @@
         </div>
       </div>
     </footer>
+    <!-- 星級評分js -->
+    <script>document.querySelectorAll('.star-rating i').forEach(star => {
+      star.addEventListener('click', function() {
+        let rating = this.getAttribute('data-value');
+        
+        // Remove selected class from all stars
+        document.querySelectorAll('.star-rating i').forEach(star => {
+          star.classList.remove('selected');
+        });
+        
+        // Add selected class to clicked star and all previous stars
+        for (let i = 0; i < rating; i++) {
+          document.querySelectorAll('.star-rating i')[i].classList.add('selected');
+        }
+    
+        // Set the hidden input's value to the selected rating
+        document.getElementById('rating').value = rating;
+      });
+    });
+    </script>
   </body>
 </html>
