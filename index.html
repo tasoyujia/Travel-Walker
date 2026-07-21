@@ -64,11 +64,12 @@
         text-align: center;
         
       }
-      .productlist {
-        width: 1500px;
-        margin: 0 auto;
-        text-align: center;
-      }
+      /*  2026/7/21*/
+     .productlist{
+    width:100%;
+     max-width:1500px; 
+    margin:auto;
+}
       .productlist img{
         border-radius:15px 15px 0px 0px ;
       }
@@ -187,9 +188,11 @@
     label{
         margin-left: 0.6em ;
     }
-    img{
-      height: 80%;
-    }
+    /* 2026/7/21 */
+  img{
+    max-width:100%;
+    height:auto;
+}
    span{
     float: right;
    }
@@ -206,6 +209,248 @@
   .carousel-item  img{
     border-radius: 60px;
   }
+
+
+  /* ==========================
+   Tablet & Mobile RWD
+========================== */
+@media (max-width: 992px) {
+
+  /* Header */
+  header .row {
+    text-align: center;
+  }
+
+  header .col-2,
+  header .col-8 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .navbar li {
+    margin: 5px;
+  }
+
+  .text-right {
+    text-align: center !important;
+  }
+
+  /* Carousel */
+  .carousel-item img {
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* 搜尋頁籤 */
+  #tab ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #tab li {
+    margin: 5px;
+  }
+
+  #tab-content-1.active,
+  #tab-content-2.active,
+  #tab-content-3.active,
+  #tab-content-4.active,
+  #tab-content-5.active,
+  #tab-content-6.active,
+  #tab-content-7.active {
+    height: auto;
+  }
+
+  .tab-content p {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tab-content input,
+  .tab-content select,
+  .tab-content button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  label {
+    margin-left: 0;
+  }
+
+  input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* 商品區 */
+  .productlist {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .productlist ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .productlist li {
+    float: none;
+    width: calc(50% - 20px);
+    height: auto;
+    margin: 10px;
+  }
+
+  .productlist li img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  span {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+
+  footer .row {
+    justify-content: center;
+  }
+
+  footer .col-3,
+  footer .col-2 {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer img {
+    width: 120px;
+    height: auto;
+  }
+}
+
+/* ==========================
+   Mobile
+========================== */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  /* Logo */
+  header img {
+    width: 40px;
+  }
+
+  h10 {
+    display: block;
+    margin-top: 5px;
+  }
+
+  /* 輪播圖 */
+  .carousel-item img {
+    height: 220px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  /* 商品卡 */
+  .productlist li {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .productlist li img {
+    height: 220px;
+  }
+
+  /* 頁籤 */
+  #tab ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tab li {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  /* Footer QRCode */
+  footer img {
+    width: 100px;
+  }
+}
+/* 2026/7/21*/
+/* ==========================
+   Small Mobile
+========================== */
+@media (max-width: 576px) {
+
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .carousel-item img {
+    height: 180px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1rem;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 35px;
+    height: 35px;
+  }
+
+  .productlist li img {
+    height: 180px;
+  }
+
+  footer img {
+    width: 80px;
+  }
+}
     </style>
   </head>
 
