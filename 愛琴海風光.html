@@ -1,569 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>愛琴海風光</title>
-    <!-- 引入Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-    <!-- 引入Font Awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <style>
-      body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        /* background: rgb(243, 239, 239); */
-      }
-      .container {
-        flex: 1;
-      }
-      /* 去掉連結的底線 */
-      .navbar a {
-        text-decoration: none;
-      }
-      .text-right a {
-        text-decoration: none;
-      }
-      ul,
-      li {
-        list-style-type: none;
-      }
-      .list img {
-        width: 100%;
-        border-radius: 15px 15px 15px 15px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 
-      }
-      iframe {
-        border-radius: 15px 15px 15px 15px;
-      }
-      footer img {
-        width: 50%;
-      }
-      /* 興及評分 */
-      .star-rating i {
-    font-size: 24px;
-    color: #ccc;
-    cursor: pointer;
-  }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>愛琴海風光</title>
+  <!-- 引入Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!-- 引入Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      /* background: rgb(243, 239, 239); */
+    }
 
-  .star-rating i.selected {
-    color: #ffca28;
-  }
+    .container {
+      flex: 1;
+    }
 
-  /* ==========================
+    /* 去掉連結的底線 */
+    .navbar a {
+      text-decoration: none;
+    }
+
+    .text-right a {
+      text-decoration: none;
+    }
+
+    ul,
+    li {
+      list-style-type: none;
+    }
+
+    .list img {
+      width: 100%;
+      border-radius: 15px 15px 15px 15px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+    }
+
+    iframe {
+      border-radius: 15px 15px 15px 15px;
+    }
+
+    footer img {
+      width: 50%;
+    }
+
+    /* 興及評分 */
+    .star-rating i {
+      font-size: 24px;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .star-rating i.selected {
+      color: #ffca28;
+    }
+
+    /* ==========================
    Header RWD
 ========================== */
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
 
-  header .row {
-    text-align: center;
-  }
+      header .row {
+        text-align: center;
+      }
 
-  header .col-2,
-  header .col-8 {
-    width: 100%;
-    max-width: 100%;
-    flex: 0 0 100%;
-    margin-bottom: 10px;
-  }
+      header .col-2,
+      header .col-8 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+      }
 
-  .navbar {
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 0;
-  }
+      .navbar {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 0;
+      }
 
-  .navbar li {
-    margin: 5px;
-  }
+      .navbar li {
+        margin: 5px;
+      }
 
-  .text-right {
-    text-align: center !important;
-  }
+      .text-right {
+        text-align: center !important;
+      }
 
-  header img {
-    width: 40px !important;
-    height: auto;
-  }
+      header img {
+        width: 40px !important;
+        height: auto;
+      }
 
-  h10 {
-    display: block;
-    margin-top: 5px;
-  }
-}
+      h10 {
+        display: block;
+        margin-top: 5px;
+      }
+    }
 
-/* ==========================
+    /* ==========================
    Footer 美化
 ========================== */
 
-footer {
-  text-align: left;
-}
+    footer {
+      text-align: left;
+    }
 
-.footer-section {
-  margin-bottom: 20px;
-}
+    .footer-section {
+      margin-bottom: 20px;
+    }
 
-.footer-logo {
-  width: 120px;
-  margin-bottom: 10px;
-}
+    .footer-logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
 
-.social-icons img {
-  width: 40px;
-  margin: 5px;
-  transition: 0.3s;
-}
+    .social-icons img {
+      width: 40px;
+      margin: 5px;
+      transition: 0.3s;
+    }
 
-.social-icons img:hover {
-  transform: scale(1.15);
-}
+    .social-icons img:hover {
+      transform: scale(1.15);
+    }
 
-.qrcode {
-  width: 120px;
-  border-radius: 10px;
-}
+    .qrcode {
+      width: 120px;
+      border-radius: 10px;
+    }
 
-/* ==========================
+    /* ==========================
    Footer Mobile
 ========================== */
 
-@media (max-width:768px){
+    @media (max-width:768px) {
 
-  footer {
-    text-align: center;
-  }
+      footer {
+        text-align: center;
+      }
 
-  .footer-section {
-    border-bottom: 1px solid rgba(0,0,0,.15);
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-  }
+      .footer-section {
+        border-bottom: 1px solid rgba(0, 0, 0, .15);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
 
-  .footer-logo {
-    width: 100px;
-  }
+      .footer-logo {
+        width: 100px;
+      }
 
-  .qrcode {
-    width: 100px;
-  }
+      .qrcode {
+        width: 100px;
+      }
 
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
 
-  .social-icons img {
-    width: 45px;
-  }
+      .social-icons img {
+        width: 45px;
+      }
 
-  footer p {
-    margin-bottom: 0;
-  }
-}
-    </style>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="bg-light">
-        
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-2">
-            <!-- 左側圖標 -->
-            <img src="img/圖標2.jpg" alt="圖標" width="50" />
-            <h10>Travel Walker</h10>
-          </div>
-          <div class="col-8 text-center">
-            <!-- 中間導航 -->
-            <ul class="list-inline navbar">
-              <li class="list-inline-item vertical-line">
-                <a href="#">國外團體</a>
-              </li>
-              <li class="list-inline-item vertical-line">
-                <a href="#">台灣團體</a>
-              </li>
-              <li class="list-inline-item vertical-line">
-                <a href="#">主題旅遊</a>
-              </li>
-              <li class="list-inline-item vertical-line">
-                <a href="#">自由行</a>
-              </li>
-              <li class="list-inline-item vertical-line">
-                <a href="#">機票</a>
-              </li>
-              <li class="list-inline-item vertical-line">
-                <a href="#">訂房</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-2 text-right">
-            <a href="https://tasoyujia.github.io/Travel-Walker/%E8%A8%BB%E5%86%8A"><i class="fas fa-user"></i> 註冊</a> /
-            <a href="https://tasoyujia.github.io/Travel-Walker/%E7%99%BB%E9%8C%84"><i class="fas fa-sign-in-alt"></i>登錄</a>
-          </div>
+      footer p {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-light">
+
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <!-- 左側圖標 -->
+          <img src="img/圖標2.jpg" alt="圖標" width="50" />
+          <h10>Travel Walker</h10>
+        </div>
+        <div class="col-8 text-center">
+          <!-- 中間導航 -->
+          <ul class="list-inline navbar">
+            <li class="list-inline-item vertical-line">
+              <a href="#">國外團體</a>
+            </li>
+            <li class="list-inline-item vertical-line">
+              <a href="#">台灣團體</a>
+            </li>
+            <li class="list-inline-item vertical-line">
+              <a href="#">主題旅遊</a>
+            </li>
+            <li class="list-inline-item vertical-line">
+              <a href="#">自由行</a>
+            </li>
+            <li class="list-inline-item vertical-line">
+              <a href="#">機票</a>
+            </li>
+            <li class="list-inline-item vertical-line">
+              <a href="#">訂房</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2 text-right">
+          <a href="https://tasoyujia.github.io/Travel-Walker/%E8%A8%BB%E5%86%8A"><i class="fas fa-user"></i> 註冊</a> /
+          <a href="https://tasoyujia.github.io/Travel-Walker/%E7%99%BB%E9%8C%84"><i
+              class="fas fa-sign-in-alt"></i>登錄</a>
         </div>
       </div>
-    </header>
-<div class="container mt-3">
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="https://tasoyujia.github.io/Travel-Walker/">
-          首頁
-        </a>
-      </li>
-      <li class="breadcrumb-item active" aria-current="page">
-        愛琴海風光
-      </li>
-    </ol>
-  </nav>
-</div>
-    <div class="container list">
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <div class="p-4">
-            <img
-              src="img/希臘聖托里尼島  .jpg"
-              alt=""
-              class="w-100 img-rounded"
-            />
-          </div>
-        </div>
-        <div class="col-12 col-md-8">
-          <div class="p-4">
-            <h1>愛琴海風光</h1>
-
-            <p>
-              希臘，這個名字總讓人聯想到湛藍的愛琴海、純白的建築、悠閒的生活步調，以及深厚的歷史文化。
-            </p>
-            <p>
-              湛藍的愛琴海、璀璨的陽光、純白的沙灘，交織成一幅浪漫的海島畫卷。
-            </p>
-            <p>
-              古老的衛城、神廟、劇場，訴說著神話傳說與歷史故事，彷彿時光在此凝結。
-            </p>
-            <p>
-              無論你是熱愛歷史文化的探險家，還是嚮往悠閒海島生活的旅人，抑或是想體驗異國風情的美食家，希臘都能滿足你對旅行的所有憧憬。
-            </p>
-
-            <button type="button" class="btn btn-primary btn-lg">
-              Large button
-            </button>
-          </div>
+    </div>
+  </header>
+  <div class="container mt-3">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="https://tasoyujia.github.io/Travel-Walker/">
+            首頁
+          </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          愛琴海風光
+        </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="container list">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="p-4">
+          <img src="img/希臘聖托里尼島  .jpg" alt="" class="w-100 img-rounded" />
         </div>
       </div>
-      <hr class="border border-5" />
+      <div class="col-12 col-md-8">
+        <div class="p-4">
+          <h1>愛琴海風光</h1>
 
-      <div class="container mt-5">
-        <h1 class="text-center p-3">希臘旅遊地圖</h1>
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              width="100%"
-              height="300"
-              id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Greece&t=&z=6&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
-              scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-            ></iframe>
-          </div>
+          <p>
+            希臘，這個名字總讓人聯想到湛藍的愛琴海、純白的建築、悠閒的生活步調，以及深厚的歷史文化。
+          </p>
+          <p>
+            湛藍的愛琴海、璀璨的陽光、純白的沙灘，交織成一幅浪漫的海島畫卷。
+          </p>
+          <p>
+            古老的衛城、神廟、劇場，訴說著神話傳說與歷史故事，彷彿時光在此凝結。
+          </p>
+          <p>
+            無論你是熱愛歷史文化的探險家，還是嚮往悠閒海島生活的旅人，抑或是想體驗異國風情的美食家，希臘都能滿足你對旅行的所有憧憬。
+          </p>
+
+          <button type="button" class="btn btn-primary btn-lg">
+            Large button
+          </button>
         </div>
       </div>
+    </div>
+    <hr class="border border-5" />
 
-        <div id="itinerary-result" class="mt-4"></div>
-      </div>
-
-      <hr class="border border-5" />
-      <h1 class="text-center p-3">熱門景點介紹</h1>
-
-      <div class="container list">
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="p-3">
-              <img src="img/聖托里尼島1.jpg  " alt="" class="img-fluid w-100" />
-            </div>
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="p-3">
-              <h2>藍頂建築</h2>
-              <p>
-                希臘的藍白建築，是地中海風情的經典代表。純白的房屋在湛藍的天空下熠熠生輝，彷彿童話故事中的城堡。
-              </p>
-              <p>
-                深邃的愛琴海與之相映成趣，海浪輕吻著岸邊的鵝卵石，奏出一曲浪漫的交響曲。
-              </p>
-              <p>
-                這獨特的建築風格，不僅是希臘悠久歷史和文化的縮影，更是希臘人對生活的美好嚮往的具體表現。
-              </p>
-              <p>
-                漫步在這樣的環境中，身心都得到了極大的放鬆，彷彿置身於一幅流動的油畫之中。
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="p-3">
-              <img src="img/聖托里尼島2.jpg " alt="" class="img-fluid w-100" />
-            </div>
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="p-3">
-              <h2>阿莫迪灣</h2>
-              <p>
-                阿莫迪灣，這顆鑲嵌在聖托里尼島上的藍寶石，以其獨特的地理位置、清澈的海水和色彩繽紛的建築而聞名。
-              </p>
-              <p>
-                懸崖峭壁下，湛藍的海水與紅頂白牆的房屋交相輝映，構成了一幅如夢似幻的畫面。
-              </p>
-              <p>
-                每當夕陽西下，金色的陽光灑在海面上，將整個灣區染上一層浪漫的色彩，令人心醉神迷。
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="p-3">
-              <img src="img/聖托里尼島3.jpg " alt="" class="img-fluid w-100" />
-            </div>
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="p-3">
-              <h2>聖托里尼島的燈塔</h2>
-              <p>
-                聖托里尼島的燈塔大多建於19世紀末至20世紀初，當時海上交通繁忙，燈塔扮演著至關重要的角色。
-              </p>
-              <p>它們為過往的船隻提供導航，確保航行的安全。</p>
-              <p>
-                隨著科技的進步，燈塔的功能逐漸被現代化的導航系統取代，但這些古老的建築依然屹立在島上，成為歷史的見證。
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="p-3">
-              <img src="img/雅典1.jpg " alt="" class="img-fluid w-100" />
-            </div>
-          </div>
-          <div class="col-12 col-md-8">
-            <div class="p-3">
-              <h2>帕德嫩神殿</h2>
-              <p>
-                帕德嫩神殿建於公元前5世紀，是雅典城邦在伯利克利時代的輝煌成就之一。
-              </p>
-              <p>這座神殿不僅是宗教中心，更是雅典民主的象徵。</p>
-              <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
-              <p>
-                從羅馬帝國的統治，到拜占庭帝國的改建，再到鄂圖曼土耳其帝國的佔領，帕德嫩神殿曾多次被改建、被破壞。
-              </p>
-              <p>即便如此，它依然屹立不倒，見證了雅典城的興衰。</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="p-3">
-              <img src="img/克里特島1.jpg" alt="" class="img-fluid w-100" />
-            </div>
-          </div>
-          <div class="col-12 col-md-8"
-            <div class="p-3">
-              <h2>克諾索斯宮</h2>
-              <p>
-                克諾索斯宮，這座隱藏在歷史迷霧中的龐大宮殿，是米諾斯文明最璀璨的明珠。
-              </p>
-              <p>
-                它不僅是歐洲最古老的宮殿之一，更是傳說中迷宮的原型，與希臘神話中的牛頭人米諾陶洛斯有著千絲萬縷的聯繫。
-              </p>
-              <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
-              <p>
-                宮殿內部錯綜複雜的通道和房間，似乎隱藏著無數不為人知的秘密，吸引著無數探險家和考古學家前來探索。
-              </p>
-            </div>
-          </div>
+    <div class="container mt-5">
+      <h1 class="text-center p-3">希臘旅遊地圖</h1>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="100%" height="300" id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Greece&t=&z=6&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
       </div>
     </div>
 
-    <div class="container mt-5 mb-5">
-      <hr class="border border-5" />
+    <div id="itinerary-result" class="mt-4"></div>
+  </div>
 
-      <h1 class="text-center p-3">客戶評價</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Alice W.</h5>
-              <p class="card-text">
-                希臘之行真的太棒了！導遊很專業，景點安排得也很合理。
-              </p>
-              <div class="text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Bob K.</h5>
-              <p class="card-text">
-                非常棒的旅遊體驗，酒店和餐飲安排都非常到位。
-              </p>
-              <div class="text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Bob K.</h5>
-              <p class="card-text">
-                非常棒的旅遊體驗，酒店和餐飲安排都非常到位。
-              </p>
-              <div class="text-warning">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </div>
-            </div>
-          </div>
-        </div>
+  <hr class="border border-5" />
+  <h1 class="text-center p-3">熱門景點介紹</h1>
 
-        <!-- 添加更多評價卡片 -->
+  <div class="container list">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="p-3">
+          <img src="img/聖托里尼島1.jpg  " alt="" class="img-fluid w-100" />
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="p-3">
+          <h2>藍頂建築</h2>
+          <p>
+            希臘的藍白建築，是地中海風情的經典代表。純白的房屋在湛藍的天空下熠熠生輝，彷彿童話故事中的城堡。
+          </p>
+          <p>
+            深邃的愛琴海與之相映成趣，海浪輕吻著岸邊的鵝卵石，奏出一曲浪漫的交響曲。
+          </p>
+          <p>
+            這獨特的建築風格，不僅是希臘悠久歷史和文化的縮影，更是希臘人對生活的美好嚮往的具體表現。
+          </p>
+          <p>
+            漫步在這樣的環境中，身心都得到了極大的放鬆，彷彿置身於一幅流動的油畫之中。
+          </p>
+        </div>
       </div>
     </div>
-    <div class="container mt-5 mb-5">
-      <h3>分享您的評價</h3>
-      <form id="review-form">
-        <div class="form-group">
-          <label for="name">您的名字:</label>
-          <input type="text" class="form-control" id="name" placeholder="輸入名字">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="p-3">
+          <img src="img/聖托里尼島2.jpg " alt="" class="img-fluid w-100" />
         </div>
-        <div class="form-group mt-3">
-          <label for="review">您的評價:</label>
-          <textarea class="form-control" id="review" rows="3" placeholder="寫下您的評價"></textarea>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="p-3">
+          <h2>阿莫迪灣</h2>
+          <p>
+            阿莫迪灣，這顆鑲嵌在聖托里尼島上的藍寶石，以其獨特的地理位置、清澈的海水和色彩繽紛的建築而聞名。
+          </p>
+          <p>
+            懸崖峭壁下，湛藍的海水與紅頂白牆的房屋交相輝映，構成了一幅如夢似幻的畫面。
+          </p>
+          <p>
+            每當夕陽西下，金色的陽光灑在海面上，將整個灣區染上一層浪漫的色彩，令人心醉神迷。
+          </p>
         </div>
-        <div class="form-group mt-3">
-          <label for="rating">星級評分:</label>
-          <div class="star-rating">
-            <i class="fas fa-star" data-value="1"></i>
-            <i class="fas fa-star" data-value="2"></i>
-            <i class="fas fa-star" data-value="3"></i>
-            <i class="fas fa-star" data-value="4"></i>
-            <i class="fas fa-star" data-value="5"></i>
-          </div>
-          <input type="hidden" id="rating" name="rating">
-        </div>
-        <button type="submit" class="btn btn-success mt-3">提交評價</button>
-      </form>
+      </div>
     </div>
-        <footer class="bg-warning py-4 text-dark">
-      <div class="container">
-        <div class="row align-items-start">
-          <div class="col-lg-3 col-md-6 footer-section">
 
-              <img src="img/travel.png" alt="" class="footer-logo">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="p-3">
+          <img src="img/聖托里尼島3.jpg " alt="" class="img-fluid w-100" />
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="p-3">
+          <h2>聖托里尼島的燈塔</h2>
+          <p>
+            聖托里尼島的燈塔大多建於19世紀末至20世紀初，當時海上交通繁忙，燈塔扮演著至關重要的角色。
+          </p>
+          <p>它們為過往的船隻提供導航，確保航行的安全。</p>
+          <p>
+            隨著科技的進步，燈塔的功能逐漸被現代化的導航系統取代，但這些古老的建築依然屹立在島上，成為歷史的見證。
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="p-3">
+          <img src="img/雅典1.jpg " alt="" class="img-fluid w-100" />
+        </div>
+      </div>
+      <div class="col-12 col-md-8">
+        <div class="p-3">
+          <h2>帕德嫩神殿</h2>
+          <p>
+            帕德嫩神殿建於公元前5世紀，是雅典城邦在伯利克利時代的輝煌成就之一。
+          </p>
+          <p>這座神殿不僅是宗教中心，更是雅典民主的象徵。</p>
+          <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
+          <p>
+            從羅馬帝國的統治，到拜占庭帝國的改建，再到鄂圖曼土耳其帝國的佔領，帕德嫩神殿曾多次被改建、被破壞。
+          </p>
+          <p>即便如此，它依然屹立不倒，見證了雅典城的興衰。</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="p-3">
+          <img src="img/克里特島1.jpg" alt="" class="img-fluid w-100" />
+        </div>
+      </div>
+      <div class="col-12 col-md-8" <div class="p-3">
+        <h2>克諾索斯宮</h2>
+        <p>
+          克諾索斯宮，這座隱藏在歷史迷霧中的龐大宮殿，是米諾斯文明最璀璨的明珠。
+        </p>
+        <p>
+          它不僅是歐洲最古老的宮殿之一，更是傳說中迷宮的原型，與希臘神話中的牛頭人米諾陶洛斯有著千絲萬縷的聯繫。
+        </p>
+        <p>然而，時光荏苒，帕德嫩神殿也歷經了無數的風雨。</p>
+        <p>
+          宮殿內部錯綜複雜的通道和房間，似乎隱藏著無數不為人知的秘密，吸引著無數探險家和考古學家前來探索。
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 
-                <h5>Travel Walker</h5>
+  <div class="container mt-5 mb-5">
+    <hr class="border border-5" />
 
-                   <p>
-                      探索世界每一個角落<br>
-                      創造屬於您的旅行故事
-                  </p>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-section">
-            <p class="text-start">
-              <b>聯絡方式</b><br/> 
-              xxxx股份有限公司<br/>
-              代表人:xxx<br/>
-              123@gmail.com<br />
-              1234-5678<br/>
-              地址:xxx市xxx里xxxx路x段xxx巷x號x樓<br>
-              統一編號：04655091
+    <h1 class="text-center p-3">客戶評價</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Alice W.</h5>
+            <p class="card-text">
+              希臘之行真的太棒了！導遊很專業，景點安排得也很合理。
             </p>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
           </div>
-          <div class="col-lg-2 col-md-6 footer-section">
-            <p class="text-start ">
-              <b>相關企業</b><br/>
-              xxxxxxxx<br/>
-              xxxxxxxx<br/>
-              xxxxxxxx<br/>
-              xxxxxxxx<br/>
-              xxxxxxxx<br/>
-              xxxxxxxx
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Bob K.</h5>
+            <p class="card-text">
+              非常棒的旅遊體驗，酒店和餐飲安排都非常到位。
             </p>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 footer-section">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Bob K.</h5>
+            <p class="card-text">
+              非常棒的旅遊體驗，酒店和餐飲安排都非常到位。
+            </p>
+            <div class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <h5>APP下載</h5>
+      <!-- 添加更多評價卡片 -->
+    </div>
+  </div>
+  <div class="container mt-5 mb-5">
+    <h3>分享您的評價</h3>
+    <form id="review-form">
+      <div class="form-group">
+        <label for="name">您的名字:</label>
+        <input type="text" class="form-control" id="name" placeholder="輸入名字">
+      </div>
+      <div class="form-group mt-3">
+        <label for="review">您的評價:</label>
+        <textarea class="form-control" id="review" rows="3" placeholder="寫下您的評價"></textarea>
+      </div>
+      <div class="form-group mt-3">
+        <label for="rating">星級評分:</label>
+        <div class="star-rating">
+          <i class="fas fa-star" data-value="1"></i>
+          <i class="fas fa-star" data-value="2"></i>
+          <i class="fas fa-star" data-value="3"></i>
+          <i class="fas fa-star" data-value="4"></i>
+          <i class="fas fa-star" data-value="5"></i>
+        </div>
+        <input type="hidden" id="rating" name="rating">
+      </div>
+      <button type="submit" class="btn btn-success mt-3">提交評價</button>
+    </form>
+  </div>
+  <footer class="bg-warning py-4 text-dark">
+    <div class="container">
+      <div class="row align-items-start">
+        <div class="col-lg-3 col-md-6 footer-section">
 
-               <img src="img/QR_CODE.png"
-                alt=""
-               class="qrcode">
+          <img src="img/travel.png" alt="" class="footer-logo">
 
-           <h5 class="mt-3">關注我們</h5>
+          <h5>Travel Walker</h5>
+
+          <p>
+            探索世界每一個角落<br>
+            創造屬於您的旅行故事
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 footer-section">
+          <p class="text-start">
+            <b>聯絡方式</b><br />
+            xxxx股份有限公司<br />
+            代表人:xxx<br />
+            123@gmail.com<br />
+            1234-5678<br />
+            地址:xxx市xxx里xxxx路x段xxx巷x號x樓<br>
+            統一編號：04655091
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6 footer-section">
+          <p class="text-start ">
+            <b>相關企業</b><br />
+            xxxxxxxx<br />
+            xxxxxxxx<br />
+            xxxxxxxx<br />
+            xxxxxxxx<br />
+            xxxxxxxx<br />
+            xxxxxxxx
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-6 footer-section">
+
+          <h5>APP下載</h5>
+
+          <img src="img/QR_CODE.png" alt="" class="qrcode">
+
+          <h5 class="mt-3">關注我們</h5>
 
           <div class="social-icons">
 
-         <img src="img/facebook.png" alt="">
-         <img src="img/instagram (1).png" alt="">
-         <img src="img/line.png" alt="">
-         <img src="img/twitter.png" alt="">
+            <img src="img/facebook.png" alt="">
+            <img src="img/instagram (1).png" alt="">
+            <img src="img/line.png" alt="">
+            <img src="img/twitter.png" alt="">
 
-  </div>
+          </div>
 
-</div>
         </div>
       </div>
-    </footer>
-    <!-- 星級評分js -->
-    <script>document.querySelectorAll('.star-rating i').forEach(star => {
-      star.addEventListener('click', function() {
+    </div>
+  </footer>
+  <!-- 星級評分js -->
+  <script>document.querySelectorAll('.star-rating i').forEach(star => {
+      star.addEventListener('click', function () {
         let rating = this.getAttribute('data-value');
-        
+
         // Remove selected class from all stars
         document.querySelectorAll('.star-rating i').forEach(star => {
           star.classList.remove('selected');
         });
-        
+
         // Add selected class to clicked star and all previous stars
         for (let i = 0; i < rating; i++) {
           document.querySelectorAll('.star-rating i')[i].classList.add('selected');
         }
-    
+
         // Set the hidden input's value to the selected rating
         document.getElementById('rating').value = rating;
       });
     });
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
