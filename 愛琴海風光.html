@@ -100,6 +100,78 @@
     margin-top: 5px;
   }
 }
+
+/* ==========================
+   Footer 美化
+========================== */
+
+footer {
+  text-align: left;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 40px;
+  margin: 5px;
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.15);
+}
+
+.qrcode {
+  width: 120px;
+  border-radius: 10px;
+}
+
+/* ==========================
+   Footer Mobile
+========================== */
+
+@media (max-width:768px){
+
+  footer {
+    text-align: center;
+  }
+
+  .footer-section {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .qrcode {
+    width: 100px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .social-icons img {
+    width: 45px;
+  }
+
+  footer p {
+    margin-bottom: 0;
+  }
+}
     </style>
   </head>
   <body>
@@ -414,64 +486,62 @@
         <button type="submit" class="btn btn-success mt-3">提交評價</button>
       </form>
     </div>
-    <footer class="bg-warning py-4 text-dark">
+        <footer class="bg-warning py-4 text-dark">
       <div class="container">
         <div class="row align-items-start">
-          <div class="col-3 text-left">
-            <img src="img/travel.png" alt="" />
-            <h10>Travel Walker</h10>
+          <div class="col-lg-3 col-md-6 footer-section">
+
+              <img src="img/travel.png" alt="" class="footer-logo">
+
+                <h5>Travel Walker</h5>
+
+                   <p>
+                      探索世界每一個角落<br>
+                      創造屬於您的旅行故事
+                  </p>
           </div>
-          <div class="col-3 text-right">
+          <div class="col-lg-3 col-md-6 footer-section">
             <p class="text-start">
-              <b>聯絡方式</b><br />
-              xxxx股份有限公司<br />
-              代表人:xxx<br />
+              <b>聯絡方式</b><br/> 
+              xxxx股份有限公司<br/>
+              代表人:xxx<br/>
               123@gmail.com<br />
-              1234-5678<br />
-              地址:xxx市xxx里xxxx路x段xxx巷x號x樓<br />
+              1234-5678<br/>
+              地址:xxx市xxx里xxxx路x段xxx巷x號x樓<br>
               統一編號：04655091
             </p>
           </div>
-          <div class="col-2">
-            <p class="text-start">
-              <b>相關企業</b><br />
-              xxxxxxxx<br />
-              xxxxxxxx<br />
-              xxxxxxxx<br />
-              xxxxxxxx<br />
-              xxxxxxxx<br />
+          <div class="col-lg-2 col-md-6 footer-section">
+            <p class="text-start ">
+              <b>相關企業</b><br/>
+              xxxxxxxx<br/>
+              xxxxxxxx<br/>
+              xxxxxxxx<br/>
+              xxxxxxxx<br/>
+              xxxxxxxx<br/>
               xxxxxxxx
             </p>
           </div>
-          <div class="col-3">
-            <div class="row">
-              <div class="col-md-6">
-                <p class="text-start">
-                  <b>APP下載</b><br />
-                  <img src="img/QR_CODE.png" alt="" />
-                </p>
-              </div>
-              <div class="col-md-6">
-                <p class="text-start">
-                  <b>關注我們</b>
-                </p>
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="img/instagram (1).png" alt="" />
-                  </div>
-                  <div class="col-md-6">
-                    <img src="img/facebook.png" alt="" />
-                  </div>
-                  <div class="col-md-6">
-                    <img src="img/line.png" alt="" />
-                  </div>
-                  <div class="col-md-6">
-                    <img src="img/twitter.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="col-lg-4 col-md-6 footer-section">
+
+              <h5>APP下載</h5>
+
+               <img src="img/QR_CODE.png"
+                alt=""
+               class="qrcode">
+
+           <h5 class="mt-3">關注我們</h5>
+
+          <div class="social-icons">
+
+         <img src="img/facebook.png" alt="">
+         <img src="img/instagram (1).png" alt="">
+         <img src="img/line.png" alt="">
+         <img src="img/twitter.png" alt="">
+
+  </div>
+
+</div>
         </div>
       </div>
     </footer>
