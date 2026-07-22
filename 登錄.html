@@ -22,14 +22,46 @@
       a {
         text-decoration: none;
       }
+      body{
+    background:#f8f9fa;
+}
+
+.login-image{
+    height:100vh;
+}
+
+.login-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+@media (max-width:768px){
+
+    .login-image{
+        height:250px;
+    }
+
+    .form-wrapper{
+        padding:25px !important;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    .btn{
+        height:50px;
+    }
+}
     </style>
   </head>
   <body>
     <div class="container-fluid p-0">
       <!--p-0可以避免圖片邊緣留白 -->
       <div class="row">
-        <div class="col-5">
-          <div class="vh-100">
+        <div class="col-12 col-md-5">
+          <div class="login-image">
             <img
               class="w-100 h-100 object-fit-cover"
               src="img/旅遊網站登錄註冊封面.jpg"
@@ -37,8 +69,8 @@
             />
           </div>
         </div>
-        <div class="col-7">
-          <div class="p-5">
+        <div class="col-12 col-md-7">
+          <div class="p-5 form-wrapper"">
             <p><a href="https://tasoyujia.github.io/Travel-Walker/#">返回首頁</a></p>
 
             <h1 class="border-bottom border-5 pb-3 d-inline-block">登錄</h1>
